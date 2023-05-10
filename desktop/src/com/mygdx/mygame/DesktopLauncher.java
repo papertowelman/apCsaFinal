@@ -7,9 +7,11 @@ import com.mygdx.mygame.apCsaFinal;
 // Please note that on macOS your application needs to be started with the -XstartOnFirstThread JVM argument
 public class DesktopLauncher {
 	public static void main (String[] arg) {
-		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-		config.setForegroundFPS(60);
-		config.setTitle("apCsaFinal");
-		new Lwjgl3Application(new apCsaFinal(), config);
+	   Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
+	   config.setTitle("Drop");
+	   config.setWindowedMode(800, 480);
+	   config.useVsync(true);
+	   config.setForegroundFPS(60);
+	   new Lwjgl3Application(new apCsaFinal(), config);
 	}
-}
+ }
